@@ -41,23 +41,25 @@
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap animated fadeIn">
-                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                    $(endif)>
                     <input type="hidden" name="dst" value="$(link-orig)" />
                     <input type="hidden" name="popup" value="true" />
-                    <img 
-                        src="img/fastlink_logo_black.png" 
-                        alt="fastlink-logo"
+                    <img src="img/fastlink_logo_black.png" alt="fastlink-logo"
                         style="height: auto; width: 200px; display: block; margin: 0 auto; padding: 30px" />
 
                     <p class="info $(if error)alert$(endif)">
-                        $(if error == "")Please log in to use the internet hotspot $(if trial == 'yes')<br />Free trial available, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)
+                        $(if error == "")Please log in to use the internet hotspot $(if trial == 'yes')<br />Free trial
+                        available, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click
+                            here</a>.$(endif)
                         $(endif)
 
                         $(if error)$(error)$(endif)
                     </p>
                     <label>
                         <img class="ico" src="img/user.svg" alt="#" />
-                        <input name="username" type="text" value="$(username)" placeholder="Username or Email address" />
+                        <input name="username" type="text" value="$(username)"
+                            placeholder="Username or Email address" />
                     </label>
 
                     <label>
@@ -72,10 +74,11 @@
                         <a href="https://usefastlink.vercel.app/#/signup"
                             style="display: block; color:#E0371D; text-decoration: none">Register</a></button>
                 </form>
-                
+
                 <footer>
-                    <a href="https://seyipaye.notion.site/FastLink-Data-Plan-eb10d6cf7ada447390f8023024b3c192">Pricing</a>
-                    <a href="https://usefastlink.vercel.app/#/home">User Portal</a>
+                    <a
+                        href="https://seyipaye.notion.site/FastLink-Data-Plan-eb10d6cf7ada447390f8023024b3c192">Pricing</a>
+                    <a href="https://usefastlink.vercel.app/#/home">Buy Data</a>
                     <a href="tel:2348168706767">Contact us</a>
                 </footer>
 
