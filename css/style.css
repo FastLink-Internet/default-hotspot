@@ -184,6 +184,64 @@ input[type=text] {
     transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out
 }
 
+input[type=copy-text] {
+    width: 70%;
+    border: .3px solid #7d7d7d;
+    background-color: rgba(255, 255, 255, .8);
+    height: 44px;
+    padding: 3px 8px 3px 8px;
+    text-align: center;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+    transition: -webkit-box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out
+}
+
+input[type=email] {
+    width: 100%;
+    border: .3px solid #7d7d7d;
+    background-color: rgba(255, 255, 255, .8);
+    height: 44px;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .8);
+    -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+    transition: -webkit-box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out
+}
+
+.success {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+.loading-indicator {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #E0371D;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 input[type=password]:focus,
 input[type=text]:focus {
     -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 1);
@@ -203,6 +261,34 @@ input[type=submit] {
     width: 100%;
     height: 44px;
     border-radius: 6px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+
+.copy-button {
+    background: #E0371D;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    width: 28%;
+    height: 44px;
+    border-radius: 6px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+.claim-button {
+    background: #fff;
+    color: #E0371D;
+    border: 1px solid #E0371D;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out
 }
@@ -242,13 +328,17 @@ input[type=submit]:hover {
 }
 
 footer {
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 30px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
 }
 
 footer a {
-    margin: 0 10px;
+    flex: 1;
+    text-align: center;
     color: #E0371D;
     text-decoration: none;
 }
@@ -272,6 +362,19 @@ table td {
 
 table td:first-child {
     font-weight: 700
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step p {
+    margin-bottom: 20px;
+}
+
+.input-email {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .lite {
