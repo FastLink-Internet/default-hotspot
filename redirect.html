@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(if http-status == 302)Hotspot redirect$(endif)
 $(if http-header == "Location")$(link-redirect)$(endif)
 <html>
@@ -11,17 +10,3 @@ $(if http-header == "Location")$(link-redirect)$(endif)
 <body>
 </body>
 </html>
-=======
-$(if http-status == 302)Hotspot redirect$(endif)
-$(if http-header == "Location")$(link-redirect)$(endif)
-<html>
-<head>
-<title>...</title>
-<meta http-equiv="refresh" content="0; url=$(link-redirect)">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="expires" content="-1">
-</head>
-<body>
-</body>
-</html>
->>>>>>> 26921c2 (initial commit)
