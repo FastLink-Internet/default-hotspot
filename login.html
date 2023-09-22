@@ -23,8 +23,14 @@
     <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
+<<<<<<< HEAD
         <input type="hidden" name="dst" value="$(link-orig)" />
         <input type="hidden" name="popup" value="true" />
+=======
+        <!-- <input type="hidden" name="dst" value="$(link-orig)" /> -->
+        <input type="hidden" name="dst" value="https://usefastlink.com" />
+        <input type="hidden" name="popup" value="false" />
+>>>>>>> 26921c2 (initial commit)
     </form>
 
     <script src="/md5.js"></script>
@@ -41,6 +47,7 @@
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap animated fadeIn">
+<<<<<<< HEAD
                 <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <input type="hidden" name="dst" value="$(link-orig)" />
                     <input type="hidden" name="popup" value="true" />
@@ -56,13 +63,32 @@
 
                     <p class="info $(if error)alert$(endif)">
                         $(if error == "")Please log in to use the internet hotspot service $(if trial == 'yes')<br />Free trial available, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)
+=======
+                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                    $(endif)>
+                    <!-- <input type="hidden" name="dst" value="$(link-orig)" /> -->
+                    <input type="hidden" name="dst" value="https://usefastlink.com" />
+                    <input type="hidden" name="popup" value="false" />
+                    <img src="img/fastlink_logo_black.png" alt="fastlink-logo"
+                        style="height: auto; width: 200px; display: block; margin: 0 auto; padding: 30px" />
+
+                    <p class="info $(if error)alert$(endif)">
+                        $(if error == "")Please log in to use the internet hotspot $(if trial == 'yes')<br />Free trial
+                        available, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click
+                            here</a>.$(endif)
+>>>>>>> 26921c2 (initial commit)
                         $(endif)
 
                         $(if error)$(error)$(endif)
                     </p>
                     <label>
                         <img class="ico" src="img/user.svg" alt="#" />
+<<<<<<< HEAD
                         <input name="username" type="text" value="$(username)" placeholder="Username" />
+=======
+                        <input name="username" type="text" value="$(username)"
+                            placeholder="Username or Email address" />
+>>>>>>> 26921c2 (initial commit)
                     </label>
 
                     <label>
@@ -71,9 +97,30 @@
                     </label>
 
                     <input type="submit" value="Connect" />
+<<<<<<< HEAD
 
                 </form>
                 <button style="
+=======
+                    <!-- <input type="register" value="Register"> </input> -->
+
+                    <button class="register-button">
+                        <a href="https://portal.usefastlink.com/#/signup"
+                            style="display: block; color:#E0371D; text-decoration: none">Register</a></button>
+                </form>
+
+                <footer>
+                    <a href="/buy-data.html">Buy or Claim Free Data</a>
+                </footer>
+                <footer style="margin-top: 5px;">
+                    <a
+                        href="https://seyipaye.notion.site/FastLink-Data-Plan-eb10d6cf7ada447390f8023024b3c192">Pricing</a>
+                    <a href="https://portal.usefastlink.com/#/home">User Portal</a>
+                    <a href="sms:2348168706767">Contact us</a>
+                </footer>
+
+                <!-- <button style="
+>>>>>>> 26921c2 (initial commit)
                               width: 100%;
                               height: 44px;
                               border-radius: 8px;
@@ -81,11 +128,19 @@
                               border: none;
                             ">
                     <a href="http://178.79.149.74/login/bootstrap5/index.html?dynamic_id=20&i18n=en_GB#" style="display: block; text-decoration: none">Sign Up</a>
+<<<<<<< HEAD
                 </button>
 
+=======
+                </button> -->
+>>>>>>> 26921c2 (initial commit)
             </div>
         </div>
     </div>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 26921c2 (initial commit)
